@@ -1,12 +1,15 @@
 <?php
 
-namespace classes;
+namespace app;
 
-use classes\interfaces\IGadget;
-use vendor\core\Product;
+use core\interfaces\IGadget;
+use core\Product;
+use core\traits\TColor;
 
 class NotebookProduct extends Product implements IGadget
 {
+    use TColor;
+
     public $cpu;
 
     public function __construct($name, $price, $cpu)

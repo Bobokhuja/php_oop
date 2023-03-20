@@ -1,9 +1,9 @@
 <?php
 
-namespace classes;
+namespace app;
 
-use classes\interfaces\I3D;
-use vendor\core\Product;
+use core\interfaces\I3D;
+use core\Product;
 
 class BookProduct extends Product implements I3D
 {
@@ -27,10 +27,12 @@ class BookProduct extends Product implements I3D
 
     public function test()
     {
-        // TODO: Implement test() method.
+        echo 1;
+        return $this;
     }
 
     public function test2() {
-
+        echo 2;
+        return $this;
     }
 }
