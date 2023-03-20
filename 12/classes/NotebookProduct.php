@@ -1,8 +1,10 @@
 <?php
 
-use;
+namespace classes;
 
-class NotebookProduct extends Product
+use classes\interfaces\IGadget;
+
+class NotebookProduct extends Product implements IGadget
 {
     public $cpu;
 
@@ -10,6 +12,11 @@ class NotebookProduct extends Product
     {
         parent::__construct($name, $price);
         $this->cpu = $cpu;
+    }
+
+    public function getCase()
+    {
+        // TODO: Implement getCase() method.
     }
 
     public function getCpu()
@@ -20,5 +27,15 @@ class NotebookProduct extends Product
     public function getProduct()
     {
         return parent::getProduct() . "<p><b>Микропроцессор: </b>{$this->cpu}</p>";
+    }
+
+    public function test()
+    {
+        // TODO: Implement test() method.
+    }
+
+    public function test2()
+    {
+
     }
 }

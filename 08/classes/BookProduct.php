@@ -1,5 +1,7 @@
 <?php
 
+use;
+
 class BookProduct extends Product
 {
     public $numPages;

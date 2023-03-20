@@ -1,5 +1,7 @@
 <?php
 
+use;
+
 class NotebookProduct extends Product
 {
     public $cpu;
